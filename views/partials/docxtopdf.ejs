@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOCX to PDF Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <style>
+      body{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJlVulFQltivAja1j8ZAOkm5CP64acrUaATg&usqp=CAU');
+         background-repeat: round;
+         background-size: auto;
+      }
+      h5,p{
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 38, 255);
+        font-size: large;
+        background-color: aqua;
+
+      }
+      table{
+        background-color: blueviolet;
+      }
+      th, td {
+        width: 300px;
+        height: 50px;
+        padding:15px;
+      }
+      </style>
+  </head>
+  <body >
+    
+     
+      <div class="container">
+          <table align="center" >
+          <form action="/docxtopdf" method="post" enctype="multipart/form-data">
+           <tr> <td align="center"><p>&#128515 Hello I'm Vishal Singh </p> </td></tr> 
+            <tr> <td align="center"><img width="80px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png"/></td></tr>  
+            <tr>
+             <td align="center">
+                <h5 class="text-center">
+                <span><b> Welcome to DOCX to PDF Converter</b> </span>
+                </h5>
+              </td>
+            </tr>
+           
+            <tr>
+              <td> <div class="form-group">
+              <input type="file" name="file" id="" required class="form-control">
+                  </div>
+            </td>
+           </tr>
+          
+          <tr>
+            <td align="center">
+             <div class="form-group"></div>
+               <button  class="btn btn-success ">
+                Convert to DOCX
+               </button>
+              </div>
+             </td>
+            </tr>
+          
+           <tr>
+             <td >
+              <div class="progress">
+            <div  class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:100%"></div>
+              </div>
+             </td>
+           </tr>
+          
+        </form>
+       
+      </table>
+      </div>
+    
+     
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>

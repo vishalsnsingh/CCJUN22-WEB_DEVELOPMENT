@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PDF to DOCX Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <style>
+      body{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gXQ8mALCvVkdlARXRkwR9vLMQzyuzUT5kQ&usqp=CAU');
+         background-repeat: round;
+         background-size: auto;
+      }
+      h5,p{
+        font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 38, 255);
+        font-size: large;
+        background-color: aqua;
+
+      }
+      table{
+        background-color: blue;
+      }
+      th, td {
+        width: 300px;
+        height: 50px;
+        padding:10px;
+      }
+      </style>
+  </head>
+  <body >
+    
+      &nbsp;
+      <div class="container">
+          <table align="center" >
+          <form action="/pdftodocx" method="post" enctype="multipart/form-data">
+           <tr> <td align="center"><p>&#128515 Hello I'm Vishal Singh </p> </td></tr> 
+            <tr> <td align="center"><img width="100px" src="data:image/png;base64,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"/></td></tr>  
+            <tr>
+             <td align="center">
+                <h5 class="text-center">
+                <span><b> WELCOME to PDF to DOCX Converter</b> </span>
+                </h5>
+              </td>
+            </tr>
+           
+            <tr>
+              <td> <div class="form-group">
+              <input type="file" name="file" id="" required class="form-control">
+                  </div>
+            </td>
+           </tr>
+          
+          <tr>
+            <td align="center">
+             <div class="form-group"></div>
+               <button  class="btn btn-success ">
+                Convert to PDF
+               </button>
+              </div>
+             </td>
+            </tr>
+          
+           <tr>
+             <td >
+              <div class="progress">
+            <div  class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:100%"></div>
+              </div>
+             </td>
+           </tr>
+          
+        </form>
+       
+      </table>
+      </div>
+      &nbsp;
+     
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 300px;
+            border: 2px solid black;
+            background-color: chartreuse;
+        }
+        body{
+            background-image: url('data:image/png;base64,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');
+        }
+    </style>
+</head>
+<body>
+     <center> <br/><br/><br/><br/><br/><br/><br/><br/>
+    <table>
+        <tr><td align="center"> Choose Option!</td></tr>
+        <tr>
+            <td>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+
+                    <div class="content colour-2">
+                      <h3 class="text-center">DOCX to PDF Conversion</h3>
+                      <div class="text-center">
+                        <a class="btn btn-danger" href="/docxtopdf">Convert Now</a>
+                      </div>
+                    </div>
+                  </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+
+                    <div class="content colour-2">
+                      <h3 class="text-center">PDF to DOCX Conversion</h3>
+                      <div class="text-center">
+                        <a class="btn btn-danger" href="/pdftodocx">Convert Now</a>
+                      </div>
+                    </div>
+                  </div>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
